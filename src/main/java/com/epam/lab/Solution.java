@@ -61,9 +61,9 @@ class Solution {
                 fileWriter.write(text);
             }
         } catch (FileNotFoundException e) {
-            LOG.info("File not found. " + e.getMessage());
+            LOG.info(e.getMessage());
         } catch (Exception e) {
-            LOG.info("Some problem with file. ");
+            LOG.info(e.getMessage());
         }
         LOG.info(String.format("Spent time: %d second", stopwatch.elapsed().getSeconds()));
     }
