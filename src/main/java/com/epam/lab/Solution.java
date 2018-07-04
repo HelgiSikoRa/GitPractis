@@ -25,7 +25,7 @@ class Solution {
                 fileWriter.write(text);
             }
         } catch (FileNotFoundException e) {
-            LOG.info("File not found. " + e.getMessage());
+            LOG.info("File not fo. " + e.getMessage());
         } catch (Exception e) {
             LOG.info("Some problem with file. ");
         }
